@@ -1,0 +1,27 @@
+{
+  "name": "ropaappapi",
+  "version": "1.0.0",
+  "description": "Servicior web que recibira las consultas y entregara la informacion de clientes, vendedores y productos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ferru/Android-App.git"
+  },
+  "author": "Edgar Cuesta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ferru/Android-App/issues"
+  },
+  "homepage": "https://github.com/Ferru/Android-App#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.0"
+  }
+}
