@@ -17,12 +17,12 @@ exports.create_a_user = function(req, res){
     new_User.save(function(err, user){
 	if(err)
 	    res.send(err);
-	res.write(user);
+	res.write(JSON.stringify(user));
     });
     new_Buyer.user = new_User._id;
     new_Buyer.save(function(err, buyer){
 	if(err)
 	    res.send(err);
-	res.write(buyer);
+	res.write(JSON.stringify(buyer));
     });
 };

@@ -9,7 +9,7 @@ describe('Insert a new Buyer/User: ', () =>{
     it('should insert a Buyer', (done) => {
 	chai.request(url)
 	    .post('/buyer')
-	    .send({nombre:'Edgar', apellido:'Cuesta', telefono:'12356987', usuario:'ferru', password:'test1'})
+	    .send({nombre:'Andres', apellido:'Cuesta', telefono:'12356987', usuario:'acuesta', password:'test2'})
 	    .end(function(err, res){
 		console.log(res.body);
 		expect(res).to.have.status(200);
