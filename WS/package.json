@@ -4,7 +4,7 @@
   "description": "Servicior web que recibira las consultas y entregara la informacion de clientes, vendedores y productos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha --reporter spec",
     "start": "nodemon server.js"
   },
   "repository": {
@@ -21,7 +21,11 @@
     "nodemon": "^1.19.1"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
+    "mocha": "^6.1.4",
     "mongoose": "^5.6.0"
   }
 }

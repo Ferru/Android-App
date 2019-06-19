@@ -2,7 +2,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var BuyerTask = new Shema({
+var BuyerSchema = new Schema({
     nombre:
     {
 	type:String,
@@ -18,6 +18,15 @@ var BuyerTask = new Shema({
 	type:String,
 	required:'Kindly enter the phone number'
     },
+    user:
+    {
+	type:mongoose.Schema.Types.ObjectId,
+	ref:'User'
+    }
+    
+});
+
+var UserSchema = new Schema({
     usuario:
     {
 	type:String,
@@ -28,5 +37,7 @@ var BuyerTask = new Shema({
 	type:String,
 	required:'Kindly enter the password'
     }
+    
 });
+module.exports = mongoose.model('User', UserSchema);
 module.exports = mongoose.model('Buyer', BuyerSchema);
