@@ -8,16 +8,16 @@
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_icon_white.png.flat",
-        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\77f2baa2a11df45c45a6518e38ba4994\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon_white.png"
+        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
+        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
-        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_icon_white.png.flat",
+        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\77f2baa2a11df45c45a6518e38ba4994\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon_white.png"
     },
     {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_view.xml.flat",
@@ -28,16 +28,16 @@
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\b389f0d0b7762fa5872d6edd6b7bbdb3\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_background.9.png"
     },
     {
-        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_ripple_color.xml.flat",
-        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\1aa8c429eb56701c924d7e6036d17922\\res\\color\\mtrl_btn_ripple_color.xml"
+        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
+        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
-        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_ripple_color.xml.flat",
+        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\1aa8c429eb56701c924d7e6036d17922\\res\\color\\mtrl_btn_ripple_color.xml"
     },
     {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_menu_item_action_area.xml.flat",
@@ -56,12 +56,12 @@
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\color\\abc_tint_switch_track.xml"
     },
     {
-        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
-        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\d51d2f9b66738e17db0bec6a33115d11\\res\\drawable\\notification_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
+        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\d51d2f9b66738e17db0bec6a33115d11\\res\\drawable\\notification_bg.xml"
     },
     {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -176,16 +176,16 @@
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
-        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
+        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
-        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility.png.flat",
@@ -196,12 +196,12 @@
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\77f2baa2a11df45c45a6518e38ba4994\\res\\drawable\\com_facebook_button_background.xml"
     },
     {
-        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
-        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\d51d2f9b66738e17db0bec6a33115d11\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
+        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\anim\\abc_popup_enter.xml"
     },
     {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
@@ -228,12 +228,12 @@
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\9a2d5aec17da58479bc91e3b25595f32\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_close_icon_tint.xml.flat",
-        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\1aa8c429eb56701c924d7e6036d17922\\res\\color\\mtrl_chip_close_icon_tint.xml"
-    },
-    {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
         "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\b389f0d0b7762fa5872d6edd6b7bbdb3\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_topnub.png"
+    },
+    {
+        "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_close_icon_tint.xml.flat",
+        "source": "C:\\Users\\Andres V\\.gradle\\caches\\transforms-2\\files-2.1\\1aa8c429eb56701c924d7e6036d17922\\res\\color\\mtrl_chip_close_icon_tint.xml"
     },
     {
         "merged": "C:\\Users\\Andres V\\AndroidStudioProjects\\loginFace\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
