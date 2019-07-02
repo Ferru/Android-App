@@ -13,7 +13,11 @@ exports.list_all_users= function(req, res){
 
 exports.create_a_user = function(req, res){
     let usuarioS = req.body.usuario;
+    /*
+      Validate that the users does not existi
+     */
     User.find({usuario:usuarioS}, function(err, us1){
+	/* The search must return an empty users list, validate errors*/
 	if(us1.length === 0)
 	{
 	    var new_User = new User(req.body);
@@ -40,7 +44,7 @@ exports.create_a_user = function(req, res){
 	}
     });
 };
-
+/* Function for log into the system */
 exports.log_user = function(req, res){
     let userLoc = req.params.user;
     let password = req.params.password;
