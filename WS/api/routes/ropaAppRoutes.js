@@ -6,6 +6,10 @@ module.exports = function(app) {
     app.route('/buyer')
 	.get(ropaList.list_all_users)
 	.post(ropaList.create_a_user);
+
+    app.route('/login/:user/:password')
+	.get(ropaList.log_user);
+    
 /*
     app.route('/buyer/:buyerId')
 	.get(ropaList.read_a_user)
