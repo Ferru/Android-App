@@ -12,17 +12,17 @@ exports.list_all_users= function(req, res){
 };
 
 exports.create_a_user = function(req, res){
-    console.log("info", req.body);
+    console.log(req.body);
     let usuarioS = req.body.usuario;
     /*
       Validate that the users does not existi
      */
     User.find({usuario:usuarioS}, function(err, us1){
 	/* The search must return an empty users list, validate errors*/
-	console.log("info", us1);
+	console.log(us1);
 	if(err)
 	{
-	    console.log("error", err);
+	    console.log(err);
 	    res.status(400).send(err);
 	}
 	if(us1.length === 0)
@@ -30,22 +30,22 @@ exports.create_a_user = function(req, res){
 	    var new_User = new User(req.body);
 	    new_User.save().
 		then(user =>{
-		    console.log("info", user);
+		    console.log(user);
 		    var new_Buyer = new Buyer(req.body);
 		    new_Buyer.user = user._id;		  
 		    new_Buyer.save()
 			.then(buyer =>{
-			    console.log("info", buyer);
+			    console.log(buyer);
 			    res.status(200).json(buyer);			    
 			})
 			.catch(err =>{
-			    console.log("error", err);
+			    console.log(err);
 			    res.status(400).send(err);
 			});
 
 		})
 		.catch(err =>{
-		    console.log("error", err);
+		    console.log(err);
 		    res.status(400).send(err);
 		});
 	}
