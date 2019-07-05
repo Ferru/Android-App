@@ -60,11 +60,24 @@ public class actRegistro_usu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                new   post_DatosUsu().execute("http://localhost:3000/buyer");
+                //new post_DatosUsu().execute("http://localhost:3000/buyer");7
+
+                consumirServicio();
+
+
+
+
             }
         });
 
     }
-}
 
+    public void consumirServicio() {
+
+
+      post_DatosUsu post_datosU = new post_DatosUsu(this,"http://localhost:3000/buyer" );
+      post_datosU.execute();
+
+    }
+}
 

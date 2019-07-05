@@ -1,7 +1,9 @@
 package com.example.loginface;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -14,45 +16,122 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
+import java.util.Iterator;
 
-public class post_DatosUsu extends AsyncTask<String, Void, String> {
+public class post_DatosUsu extends AsyncTask<Void, Void, String> {
+
+    private Context httpContext;//contexto
+    ProgressDialog progressDialog;//dialogo cargando
+    public String resultadoapi = "";
+    public String linkrequestAPI = "";//link  para consumir el servicio
 
 
+    public post_DatosUsu(Context ctx, String linkAPI){
+        this.httpContext = ctx;
+        this.linkrequestAPI = linkAPI;
+    }
 
-        //ProgressDialog progressDialog;
 
+    //ProgressDialog progressDialog;
+
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+
+        progressDialog = ProgressDialog.show(httpContext, "Procesando Solicitud", "por favor, espere");
+
+
+        //
+//progressDialog.setMessage("...");
+//progressDialog.show();
+    }
         @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
+        protected String doInBackground(Void... params) {
+            String result= null;
 
-       /*
-        progressDialog.setMessage("Inserting data...");
-        progressDialog.show();*/
-        }
-
-        @Override
-        protected String doInBackground(String... params) {
-
+            String wsURL = linkrequestAPI;
+            URL url = null;
             try {
-                return postData(params[0]);
-            } catch (IOException ex) {
-                return "Error";
-            } catch (JSONException ex) {
-                return "Datos invalidos!";
+                // se crea la conexion al api
+                url = new URL(wsURL);
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                //crear el objeto json para enviar por POST
+                JSONObject dataTosend = new JSONObject();
+               dataTosend.put("nombre", "dres");
+               dataTosend.put("apellido", "valgon");
+               dataTosend.put("telefono", "2345677");
+                dataTosend.put("usuario", "gonza");
+                dataTosend.put("passsword", "1234");
+
+
+                //DEFINIR PARAMETROS DE CONEXION
+                urlConnection.setReadTimeout(15000 );
+                urlConnection.setConnectTimeout(15000);
+                urlConnection.setRequestMethod("POST");// se puede cambiar por delete ,put ,etc
+                urlConnection.setDoInput(true);
+                urlConnection.setDoOutput(true);
+
+
+                //OBTENER EL RESULTADO DEL REQUEST
+                OutputStream os = urlConnection.getOutputStream();
+                BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+                writer.write(getPostDataString(dataTosend));
+                writer.flush();
+                writer.close();
+                os.close();
+
+                int responseCode=urlConnection.getResponseCode();// conexion OK?
+                if(responseCode== HttpURLConnection.HTTP_OK){
+                    BufferedReader in= new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+
+                    StringBuffer sb= new StringBuffer("");
+                    String linea="";
+                    while ((linea=in.readLine())!= null){
+                        sb.append(linea);
+                        break;
+
+                    }
+                    in.close();
+                    result= sb.toString();
+                }
+                else{
+                    result= new String("Error: "+ responseCode);
+
+
+                }
+
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
+
+
+            return  result;
+
         }
 
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
 
-
+            progressDialog.dismiss();
+            resultadoapi=result;
+            Toast.makeText(httpContext,resultadoapi,Toast.LENGTH_LONG).show();//mostrara una notificacion con el resultado del request
 
       /*  if (progressDialog != null) {
             progressDialog.dismiss();
-        }  */      }
-
+        }  */
+    }
+/*
         private String postData(String urlPath) throws IOException, JSONException {
 
             StringBuilder result = new StringBuilder();
@@ -101,7 +180,35 @@ public class post_DatosUsu extends AsyncTask<String, Void, String> {
             }
 
             return result.toString();
+        }*/
+
+
+    //Transformar JSON Obejct a String
+    public String getPostDataString(JSONObject params) throws Exception {
+
+        StringBuilder result = new StringBuilder();
+        boolean first = true;
+        Iterator<String> itr = params.keys();
+        while(itr.hasNext()){
+
+            String key= itr.next();
+            Object value = params.get(key);
+
+            if (first)
+                first = false;
+            else
+                result.append("&");
+
+            result.append(URLEncoder.encode(key, "UTF-8"));
+            result.append("=");
+            result.append(URLEncoder.encode(value.toString(), "UTF-8"));
         }
+        return result.toString();
     }
+
+}
+
+
+
 
 

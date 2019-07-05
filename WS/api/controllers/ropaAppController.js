@@ -12,17 +12,82 @@ exports.list_all_users= function(req, res){
 };
 
 exports.create_a_user = function(req, res){
-    var new_User = new User(req.body);
-    var new_Buyer = new Buyer(req.body);
-    new_User.save(function(err, user){
+    console.log(req.body);
+    let usuarioS = req.body.usuario;
+    /*
+      Validate that the users does not existi
+     */
+    User.find({usuario:usuarioS}, function(err, us1){
+	/* The search must return an empty users list, validate errors*/
+	console.log(us1);
 	if(err)
-	    res.send(err);
-	res.write(JSON.stringify(user));
+	{
+	    console.log(err);
+	    res.status(400).send(err);
+	}
+	if(us1.length === 0)
+	{
+	    var new_User = new User(req.body);
+	    new_User.save().
+		then(user =>{
+		    console.log(user);
+		    var new_Buyer = new Buyer(req.body);
+		    new_Buyer.user = user._id;		  
+		    new_Buyer.save()
+			.then(buyer =>{
+			    console.log(buyer);
+			    res.status(200).json(buyer);			    
+			})
+			.catch(err =>{
+			    console.log(err);
+			    res.status(400).send(err);
+			});
+
+		})
+		.catch(err =>{
+		    console.log(err);
+		    res.status(400).send(err);
+		});
+	}
+	else
+	{
+	    console.log("Usuario ya existe");
+	    res.status(200).send("Usuario ya existe");
+	}
     });
-    new_Buyer.user = new_User._id;
-    new_Buyer.save(function(err, buyer){
+};
+/* Function for log into the system */
+exports.log_user = function(req, res){
+    let userLoc = req.params.user;
+    let password = req.params.password;
+    User.findOne({usuario:userLoc}, function(err, user){
 	if(err)
-	    res.send(err);
-	res.write(JSON.stringify(buyer));
+	{
+	    res.status(400).send(err);
+	}
+	else if(user == null || typeof user === "undefined" || user.length === 0)
+	{
+	    res.status(200).send("Usuario " + userLoc + " no existe");
+	}
+	else if(password !== user.password)
+	{
+	    console.log(password);
+	    console.log(user.password);
+	    res.status(200).send("Contraseña incorrecta");
+	}
+	else
+	{
+	    //Search buyer
+	    Buyer.findOne({user:user._id}, function(err, buyer){
+		if(err)
+		{
+		    res.status(400).send(err);
+		}
+		else
+		{
+		    res.status(200).json(buyer);
+		}
+	    });
+	}
     });
 };

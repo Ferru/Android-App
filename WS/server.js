@@ -8,6 +8,7 @@ var express = require('express'),
 //mongoose instance connection url connection
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb+srv://ferru:projectRopaAndroid@cluster0-wyvzq.mongodb.net/test?retryWrites=true&w=majority');
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
