@@ -12,7 +12,6 @@ import com.facebook.login.widget.ProfilePictureView;
 public class login_clase extends Application {
 
 
-
     public void onCreate(){
         super.onCreate();
         FacebookSdk.sdkInitialize(getApplicationContext());
